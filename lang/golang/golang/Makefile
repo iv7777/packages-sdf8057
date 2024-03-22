@@ -14,13 +14,14 @@ PKG_NAME:=golang
 PKG_VERSION:=$(GO_VERSION_MAJOR_MINOR)$(if $(GO_VERSION_PATCH),.$(GO_VERSION_PATCH))
 PKG_RELEASE:=1
 
-GO_SOURCE_URLS:=https://go.dev/dl/ \
-		https://mirrors.ustc.edu.cn/golang/ \
-                https://mirrors.nju.edu.cn/golang/                
+GO_SOURCE_URLS:=https://dl.google.com/go/ \
+                https://mirrors.ustc.edu.cn/golang/ \
+                https://mirrors.nju.edu.cn/golang/ \
+                https://go.dev/dl/
 
 PKG_SOURCE:=go$(PKG_VERSION).src.tar.gz
 PKG_SOURCE_URL:=$(GO_SOURCE_URLS)
-PKG_HASH:=79c9b91d7f109515a25fc3ecdaad125d67e6bdb54f6d4d98580f46799caea321
+PKG_HASH:=e56685a245b6a0c592fc4a55f0b7803af5b3f827aaa29feab1f40e491acf35b8
 
 PKG_MAINTAINER:=Jeffery To <jeffery.to@gmail.com>
 PKG_LICENSE:=BSD-3-Clause
